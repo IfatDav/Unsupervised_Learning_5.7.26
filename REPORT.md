@@ -14,6 +14,7 @@ I chose Cosine Similarity as my primary metric. Since my analysis focuses on rel
 
 Feature choices (and what you did about frequency / missing values):
 I focused on behavioral features derived from product category popularity and basket composition, while explicitly excluding recency and frequency metrics as instructed. I applied rigorous scaling to ensure that feature magnitudes do not bias the distance calculations, and I handled missing values by imputing them with zero, as in this context, a null value represents a lack of interaction with a specific product category.
+
 ---
 
 ## 2. Method & validation
