@@ -1,20 +1,19 @@
 # REPORT — Module 3 · Assignment 2 · Unsupervised Learning
 
-**Name:** ___  **ID:** ___  **Date:** ___
-**Chosen option:** ___ (A · Olist segmentation / B · Credit Card / C · Olist anomaly)
-
-> Keep this report in English. There is no ground truth here, so "I argued it is good
-> but the evidence is weak because ___" is a strong, honest answer.
+**Name:** Ifat Davidson  **ID:** 037377140  **Date:** 4.7.26
+**Chosen option:** A (A · Olist segmentation / B · Credit Card / C · Olist anomaly)
 
 ---
 
 ## 1. Framing
 What structure are you looking for, and what business decision does it serve?
+I am seeking latent customer segments based on distinct purchasing patterns to replace broad-brush marketing strategies. This structure serves the business decision of enabling personalized communication, specifically identifying which customer groups respond better to aggressive discount campaigns versus those who prefer loyalty content or premium product recommendations.
 
 Distance / similarity measure chosen, and why:
+I chose Cosine Similarity as my primary metric. Since my analysis focuses on relative product category preferences within a basket rather than raw monetary volume, this measure effectively captures the orientation of consumption patterns rather than their absolute magnitude.
 
 Feature choices (and what you did about frequency / missing values):
-
+I focused on behavioral features derived from product category popularity and basket composition, while explicitly excluding recency and frequency metrics as instructed. I applied rigorous scaling to ensure that feature magnitudes do not bias the distance calculations, and I handled missing values by imputing them with zero, as in this context, a null value represents a lack of interaction with a specific product category.
 ---
 
 ## 2. Method & validation
